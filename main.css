@@ -1,0 +1,48 @@
+html, body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:#1e3932;
+}
+#applet {
+	border-radius: 8px;
+	background-color: #d4e9e2;
+	padding: 25px 50px 50px 50px;
+	max-height: 90%;
+	max-width: 90%;
+}
+#greeting {
+	font-family: "Lander";
+	line-height: 1.2;
+	font-size: 30pt;
+	padding-top: 20px;
+	padding-bottom: 28px;
+}
+#today {
+	font-family: "SoDoSans";
+	font-weight: 600;
+	font-size: 16pt;
+ 	padding-bottom: 20px;
+}
+table {
+	width: 100%;
+	font-family: "SoDoSans";
+	line-height: 1.5;
+	font-weight: 400;
+	font-size: 12pt;
+}
+@font-face {
+  	font-family: "Lander";
+  	src: url(LanderGrande-SemiBold.otf) format("opentype");
+  	font-weight: 600;
+}
+@font-face {
+  	font-family: "SoDoSans";
+  	src: url(SoDoSans-Regular.otf) format("opentype");
+  	font-weight: 400;
+}
+@font-face {
+  	font-family: "SoDoSans";
+  	src: url(SoDoSans-SemiBold.otf) format("opentype");
+  	font-weight: 600;
+}
