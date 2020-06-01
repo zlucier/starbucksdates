@@ -14,14 +14,14 @@ html, body{
 #greeting {
 	font-family: "Lander";
 	line-height: 1.2;
-	font-size: 30pt;
+	font-size: 41px;
 	padding-top: 20px;
 	padding-bottom: 28px;
 }
 #today {
 	font-family: "SoDoSans";
 	font-weight: 600;
-	font-size: 16pt;
+	font-size: 24px;
  	padding-bottom: 20px;
 }
 table {
@@ -29,7 +29,28 @@ table {
 	font-family: "SoDoSans";
 	line-height: 1.5;
 	font-weight: 400;
-	font-size: 12pt;
+	font-size: 18px;
+}
+button {
+	border: 0;
+	position: absolute;
+	right:    0;
+	bottom:   0;
+	display: inline-block;
+	padding: 18px 2.4rem;
+	margin-bottom: 31px;
+	margin-right: 31px;
+	background: #00a862;
+	box-shadow: 0 0 6px rgba(0,0,0,.24),0 8px 12px rgba(0,0,0,.14);
+	border-radius: 500px;
+	color: #fff;
+	font-size: 19px;
+	font-family: "SoDoSans";
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
 }
 @font-face {
   	font-family: "Lander";
