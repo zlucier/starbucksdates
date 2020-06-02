@@ -23,6 +23,7 @@ function renderToday(){
 	var date = myDate.getDate();
 
 	const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	const days_sh = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 	const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 	var tdate = "Today is " + days[day] + ", " + months[month] + " " + date;
@@ -33,7 +34,7 @@ function renderToday(){
 		var dayx = myDatex.getDay();
 		var monthx = myDatex.getMonth();
 		var datex = myDatex.getDate();
-		var tdatex = days[dayx] + ", " + months[monthx] + " " + datex;
+		var tdatex = days_sh[dayx] + ", " + months[monthx] + " " + datex;
 		return tdatex;
 	}
 	document.getElementById("days2").innerHTML = addToday(2);
