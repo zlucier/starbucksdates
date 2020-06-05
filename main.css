@@ -1,15 +1,66 @@
 html, body{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+	line-height: 1.0;
+	word-wrap: break-word;
+	overflow-x: hidden;
+	background-color: #f9f9f9;
 	color:#1e3932;
 }
-#applet {
+
+#wrapper {
+	-webkit-overflow-scrolling: touch;
+	display: flex;
+	-moz-flex-direction: column;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	/*-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;*/
+	min-height: 100vh;
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+}
+
+#main {
+	display: flex;
+	position: relative;
+	max-width: 100%;
+	z-index: 1;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	-moz-flex-grow: 0;
+	-webkit-flex-grow: 0;
+	-ms-flex-grow: 0;
+	flex-grow: 0;
+	-moz-flex-shrink: 0;
+	-webkit-flex-shrink: 0;
+	-ms-flex-shrink: 0;
+	flex-shrink: 0;
+	text-align: left;
 	border-radius: 8px;
 	background-color: #d4e9e2;
 	padding: 25px 50px 50px 50px;
-	max-height: 90%;
-	max-width: 90%;
+	-moz-transition: opacity 1.25s ease-in-out 0s;
+	-webkit-transition: opacity 1.25s ease-in-out 0s;
+	-ms-transition: opacity 1.25s ease-in-out 0s;
+	transition: opacity 1.25s ease-in-out 0s;
+	box-shadow: 0 0 .5px 0 rgba(0,0,0,.14),0 1px 1px 0 rgba(0,0,0,.24);
+	margin-bottom: 95.2px;
 }
 #greeting {
 	font-family: "Lander";
@@ -20,6 +71,7 @@ html, body{
 }
 #today {
 	font-family: "SoDoSans";
+	line-height: 1.2;
 	font-weight: 600;
 	font-size: 24px;
  	padding-bottom: 20px;
@@ -38,13 +90,18 @@ p {
 	font-size: 24px;
 	letter-spacing: 2px;
 }
-button {
+#cheat {
 	position: absolute;
-	right: 0;
-	margin-top: 15px;
-	margin-right: 15px;
-	margin-bottom: 15px;
+	padding: 2.4rem 1.2rem 1.2rem 1.2rem;
 	display: inline-block;
+	right: 0;
+	bottom: 0;
+}
+button {
+	position: relative;
+	display: inline-block;
+	z-index: 1;
+	overflow: hidden;
 	padding: 17px 27px;
 	border: 0;
 	background: #00a862;
@@ -57,6 +114,7 @@ button {
 	line-height: 1.2;
 	text-align: center;
 	text-decoration: none;
+	-webkit-appearance: button;
 	cursor: pointer;
 }
 @font-face {
@@ -79,3 +137,13 @@ button {
   	src: url(Pike-Bold.otf) format("opentype");
   	font-weight: 700;
 }
+
+@media (max-width: 480px) {
+ #wrapper {
+  padding: 0rem;
+ }
+
+@media (max-width: 360px) {
+ #wrapper {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+ }
