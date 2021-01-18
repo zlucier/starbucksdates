@@ -7,45 +7,54 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="shortcut icon" type="image/png" href="Icon-App-1024x1024.png"/>
 	<link rel="apple-touch-icon" type="image/png" href="Icon-App-1024x1024.png"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body onLoad="renderToday();">
 	<div id="wrapper">
 		<div id="main">
 			<div class="inner">
-				<div id="greeting"></div>
-				<div id="today"></div>
-				<table>
-					<tbody>
-						<tr>
-							<td style="font-weight: 600">2 days</td>
-							<td style="text-align: right" id="days2"></td>
-						</tr>
-						<tr>
-							<td style="font-weight: 600">5 days</td>
-							<td style="text-align: right" id="days5">Wednesday June 3</td>
-						</tr>
-						<tr>
-							<td style="font-weight: 600">7 days</td>
-							<td style="text-align: right" id="days7"></td>
-						</tr>
-						<tr>
-							<td style="font-weight: 600">14 days</td>
-							<td style="text-align: right" id="days14"></td>
-						</tr>
-						<tr>
-							<td style="font-weight: 600">30 days</td>
-							<td style="text-align: right" id="days30"></td>
-						</tr>
-					</tbody>
-				</table>
+				<div id="container01">
+					<div id="greeting"></div>
+					<div id="today"></div>
+					<table id="t1">
+						<tbody>
+							<tr>
+								<td style="font-weight: 600">2 days</td>
+								<td style="text-align: right" id="days2"></td>
+							</tr>
+							<tr>
+								<td style="font-weight: 600">5 days</td>
+								<td style="text-align: right" id="days5">Wednesday June 3</td>
+							</tr>
+							<tr>
+								<td style="font-weight: 600">7 days</td>
+								<td style="text-align: right" id="days7"></td>
+							</tr>
+							<tr>
+								<td style="font-weight: 600">14 days</td>
+								<td style="text-align: right" id="days14"></td>
+							</tr>
+							<tr>
+								<td style="font-weight: 600">30 days</td>
+								<td style="text-align: right" id="days30"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="container02">
+					<a href="have_you_day_dotted.pdf" target="_blank" style="text-decoration: none; color: inherit;">
+					<table>
+						<tbody>
+							<tr>
+								<td style="font-weight: 800;letter-spacing: 2px">CHEAT SHEET</td>
+								<td style="text-align: right; line-height: 0;"><i class="material-icons">arrow_forward_ios</i></td>
+							</tr>
+						</tbody>
+					</table>
+					</a>
+				</div>
 			</div>
-		</div>
-		<div id="cheat">
-			<a href="have_you_day_dotted.pdf" target="_blank">
-			<button>
-				Cheat Sheet!
-			</button>
-			</a>
 		</div>
 	</div>
 	<script type="text/javascript" src="main.js"></script>
