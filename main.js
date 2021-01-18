@@ -9,12 +9,14 @@ function renderToday(){
 	var currentTime = new Date();
 	var h = currentTime.getHours();
 	var greet;
-		if (h < 12)
-			greet = 'Good Morning ☀️';
-		else if (h >= 12 && h <= 17)
-			greet = 'Good Afternoon ☕️';
-		else if (h >= 17 && h <= 24)
-			greet = 'Good Evening 🌙';
+		if (h >= 4 && h < 12)
+			greet = "Good Morning ☀️";
+		else if (h >= 12 && h < 17)
+			greet = "Good Afternoon ☕️";
+		else if (h >= 17 && h < 24)
+			greet = "Good Evening 🌙";
+		else
+			greet = "You're working now? 🤨";
 	document.getElementById("greeting").innerHTML = greet;
 	//Today
 	var myDate = new Date();
