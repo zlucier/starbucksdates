@@ -32,7 +32,7 @@ html, body{
 	border-radius: 8px;
 	background-color: transparent;
 	box-shadow: 0 0 .5px 0 rgba(0,0,0,.14),0 1px 1px 0 rgba(0,0,0,.24);
-	margin-bottom: 25px
+	margin: 2px
 }
 
 .inner {
